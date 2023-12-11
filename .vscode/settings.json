@@ -1,0 +1,144 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": true
+    }
+  },
+  "workbench.colorTheme": "Predawn",
+  "workbench.startupEditor": "none",
+  "files.autoSave": "afterDelay",
+  "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+  "workbench.preferredLightColorTheme": "Visual Studio Dark",
+  "editor.fontSize": 16,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "vim.easymotion": true,
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-l>": false,
+    "<C-d>": true,
+    "<C-o>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-]>": false,
+    "<C-[>": false,
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-b>": false,
+    "<C-p>": false,
+    "<C-f>": false,
+    "<C-space>": false,
+    "<C-n>": false,
+    "<arrow>": false
+  },
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.revealDefinitionAside"]
+    },
+    {
+      "before": ["y", "d"],
+      "after": ["d"]
+    },
+    {
+      "before": ["y", "D"],
+      "after": ["D"]
+    },
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }, // moveLineUp
+    {
+      "before": ["q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
+    },
+    {
+      "before": ["f"],
+      "after": ["leader", "leader", "s"]
+    },
+    {
+      "before": ["v", "f"],
+      "after": ["v", "leader", "leader", "s"]
+    },
+    // {
+    //   "before": ["d", "f"],
+    //   "after": ["d", "leader", "leader", "s"]
+    // },
+    {
+      "before": ["enter"],
+      "commands": ["workbench.view.explorer"]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  "workbench.editor.showTabs": false,
+  "githubPullRequests.pullBranch": "never",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "githubPullRequests.fileListLayout": "tree",
+  "python.analysis.autoImportCompletions": true,
+  "editor.minimap.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "vim.foldfix": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
